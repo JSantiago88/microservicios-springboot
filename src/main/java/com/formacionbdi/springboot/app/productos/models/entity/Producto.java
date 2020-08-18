@@ -29,30 +29,37 @@ public class Producto implements Serializable{
 	
 	@Column(name = "created_at")
 	@Temporal(TemporalType.DATE)
-	private Date createAt;
+	private Date createdAt;
 	
 	public Long getId() {
 		return id;
 	}
+	
 	public void setId(Long id) {
 		this.id = id;
 	}
+	
 	public String getNombre() {
 		return nombre;
 	}
+	
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
+	
 	public Double getPrecio() {
 		return precio;
 	}
+	
 	public void setPrecio(Double precio) {
 		this.precio = precio;
 	}
-	public Date getCreateAt() {
-		return createAt;
+	
+	public Date getCreatedAt() {
+		return createdAt;
 	}
-	public void setCreateAt(Date createAt) {
-		this.createAt = createAt;
+	
+	public void setCreatedAt(Date createAt) {
+		this.createdAt = createAt;
 	}
 }
